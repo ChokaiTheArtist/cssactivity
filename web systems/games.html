@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Homepage</title>
+		<link rel="stylesheet" href="design.css">
+	</head>
+	<body>		
+		<header>
+			<a class="logo" href="homepage.html"><h2>CHOOM</h2></a>
+			<nav>
+				<ul class="nav__links">
+					<li><a href="about.html">About Page</a></li>
+					<li><a href="movies.html">My Movies</a></li>
+					<li><a href="games.html">My Games</a></li>
+					<li><a href="memes.html">Memes</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="gamehead">
+			<h1>MY CURRENT 3 GAME PICKS</h1>
+		</section>
+		
+		
+		<section class="Gone">
+			<h1>PROJECT ZOMBOID</h1>
+		</section>
+		
+		
+		<section class="Gtwo">
+			<h1>BLUE ARCHIVE</h1>
+		</section>
+		
+		
+		<section class="Gthree">
+			<h1>SNOWBREAK: CONTAINMENT ZONE</h1>
+		</section>
+		<button onclick="topFunction()" id="myBtn">^</button>
+		<script>
+			let mybutton = document.getElementById("myBtn");
+			
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+					} else {
+					mybutton.style.display = "none";
+				}
+			}
+			
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>
